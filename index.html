@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <div class="memory-game">
+      <div class="start-game">
+        <button id="start">Start</button>
+        <div id="normalaiz">
+          <select name="harder" id="harder">
+            <option value="esay">Esay</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="setting">
+          <span id="time"></span>
+          <span id="attmpts"></span>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+        </div>
+        <div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+        </div>
+        <div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+        </div>
+        <div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="img"></div>
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+          <div id="div" class="">
+            <div class="black"></div>
+          </div>
+        </div>
+      </div>
+      <p>click start to lunch the game</p>
+      <div class="winer">
+        <span>winer!</span>
+        <button id="restart">Restart</button>
+      </div>
+      <div class="loss">
+        <span>game over!</span>
+        <button id="restar">Restart</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

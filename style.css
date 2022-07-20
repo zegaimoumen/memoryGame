@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.memory-game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.3;
+  padding: 1px;
+  width: 700px;
+  height: 700px;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, rgb(243, 3, 143), rgb(1, 119, 255));
+}
+
+.main > div {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#div {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  transition: all 1.5s;
+  position: relative;
+}
+
+img {
+  background-color: #fff;
+  width: 160px;
+  height: 160px;
+  opacity: 1;
+  display: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: black;
+  width: 160px;
+  height: 160px;
+  transition: all 1.5s;
+  position: absolute;
+}
+
+button {
+  background-color: black;
+  padding: 7px 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#div.active {
+  transform: rotateY(180deg);
+}
+
+#div.active img {
+  display: block;
+  opacity: 1;
+  transition: all 1.5s;
+}
+
+#div.active .black {
+  display: none;
+  opacity: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+#div.visibility {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1.5s;
+}
+p {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  z-index: 1;
+  font-size: 25px;
+  opacity: 1;
+}
+
+.winer,
+.loss {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.winer span,
+.loss span {
+  display: block;
+  font-size: 50px;
+  color: rgb(255, 238, 0);
+}
+
+.notClicked {
+  pointer-events: none;
+}
+
+.start-game {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#attmpts,
+#time {
+  display: block;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+
+#normalaiz select {
+  background-color: black;
+  padding: 7px 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}
